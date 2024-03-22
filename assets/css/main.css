@@ -1,0 +1,145 @@
+/*#region Variable */
+
+:root{
+    --primary-color:#114232;
+    --secondry-color:#F7F6BB;
+    --hover-color:#FCDC2A;
+    --head-color:#344955;
+    --text-color:#313131;
+    --white-color:#FFF;
+    --gray-color:#7e7e7e;
+    --head-fs:1.5vw;
+    --text-fs:0.9vw;
+}
+
+/*#endregion */
+
+/*#region Glopal */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/*#endregion */
+
+/*#region Header*/
+
+header{
+    height: fit-content;
+}
+
+
+/*#region Nav */
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+}
+
+.navigation-links ul{
+    display: flex;
+    gap: 1.3vw;
+}
+
+.navigation-links li{
+    font-size: 1vw;
+    cursor: pointer;
+    color: var(--secondry-color);
+    font-weight: bold;
+    padding: 0.5vw 1vw;
+    transition: all 0.5s ease;
+    border-radius: 0.3rem;
+}
+
+.navigation-links li:hover{
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+}
+
+.searash-section{
+    position: relative;
+}
+
+.searash-section input{
+    height: 1rem; 
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0 1vw ;
+    border: none;
+    height: 2rem;
+    font-size: var(--text-fs);
+    font-weight: bold;
+}
+
+.searash-section .searsh-icon{
+    color: var(--gray-color);
+}
+
+.searash-section input:focus,
+.searash-section input:hover{
+    border: none;
+    outline: none;
+}
+
+.searash-section .searsh-icon{
+    position: absolute;
+    font-size: 2vw;
+}
+
+.notification{
+    display: flex;
+    gap: 2vw;
+}
+
+.notification .notification-icon{
+    color: var(--secondry-color);
+    cursor: pointer;
+    font-size: 1.8vw;
+    transition: all 0.5s ease;
+}
+
+.notification .notification-icon::after{
+    content: "5";
+    height: 1vw;
+    width: 1vw;
+    background-color: red;
+    position: absolute;
+}
+
+.notification .notification-icon:hover{
+    color: red;
+}
+
+
+/*#endregion */
+
+/*#endregion */
+
+/*#region Main*/
+
+/*#region */
+/*#endregion */
+/*#region */
+/*#endregion */
+/*#region */
+/*#endregion */
+/*#region */
+/*#endregion */
+
+
+
+/*#endregion */
+
+/*#region Footer */
+/*#endregion */
