@@ -31,17 +31,23 @@
                     <li>Views</li>
                 </ul>
             </div>
+            <div class="login">
+                <p class="user-name">Mohammed Khaled</p>
+                <img src="./assets/img/user-img.jpg" alt="Loading">
+            </div>
+        </nav>
+        <div class="hero">
+            <img src="./assets/img/hero-img.jpg" alt="Loading">
+            <div class="user-notification">
+                <div><i class="fa-regular fa-envelope messages-icon"></i></div>
+                <div><i class="fa-regular fa-bell notification-icon"></i></div>
+                <div><i class="fa-solid fa-cart-plus cart-icon"></i></div>
+            </div>
             <div class="searash-section">
-                <input type="text">
+                <input type="text" placeholder="Enter keyword to searsh ... ">
                 <i class="fa-solid fa-magnifying-glass searsh-icon"></i>
             </div>
-            <div class="notification">
-                <div class="messages"><i class="fa-regular fa-envelope notification-icon"></i></div>
-                <div class="notifications"><i class="fa-regular fa-bell notification-icon"></i></div>
-                <div class="cart"><i class="fa-solid fa-cart-plus notification-icon"></i></div>
-            </div>
-            <div class="login"></div>
-        </nav>
+        </div>
     </header>
     <main>
 

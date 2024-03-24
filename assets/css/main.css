@@ -2,12 +2,13 @@
 
 :root{
     --primary-color:#114232;
-    --secondry-color:#F7F6BB;
+    --secondry-color:#FFF;
     --hover-color:#FCDC2A;
     --head-color:#344955;
     --text-color:#313131;
     --white-color:#FFF;
     --gray-color:#7e7e7e;
+    --noification-color:#FF004D;
     --head-fs:1.5vw;
     --text-fs:0.9vw;
 }
@@ -41,7 +42,7 @@ header{
 nav{
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2.5rem;
     background-color: var(--primary-color);
     justify-content: space-between;
 }
@@ -52,7 +53,7 @@ nav{
 }
 
 .navigation-links li{
-    font-size: 1vw;
+    font-size: 1.5vw;
     cursor: pointer;
     color: var(--secondry-color);
     font-weight: bold;
@@ -66,63 +67,129 @@ nav{
     background-color: var(--hover-color);
 }
 
-.searash-section{
+.login{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login p{
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.login img{
+    border-radius: 50%;
+    height: 2.9rem;
+    width: 2.9rem;
+}
+
+/*#endregion */
+
+/*#region Hero */
+
+.hero{
     position: relative;
 }
 
-.searash-section input{
-    height: 1rem; 
+.hero img{
+    height: 35rem;
     width: 100%;
+}
+
+.user-notification{
+    display: flex;
+    position: absolute;
+    padding: 1.5rem 2vw 1rem;
+    right: 7rem;
+    top: 0;
+    background-color: var(--primary-color);
+    gap: 2vw;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.user-notification .messages-icon,
+.user-notification .notification-icon,
+.user-notification .cart-icon{
+    color: var(--secondry-color);
+    cursor: pointer;
+    font-size: 1.8vw;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.user-notification .messages-icon::after,
+.user-notification .notification-icon::after,
+.user-notification .cart-icon::after{
+    content: "5";
+    height: 1.5vw;
+    width: 1.5vw;
+    top: -0.9rem;
+    right: -0.9rem;
+    display: flex;
+    border-radius: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #387ADF;
+    position: absolute;
+}
+
+.user-notification .notification-icon:hover,
+.user-notification .messages-icon:hover,
+.user-notification .cart-icon:hover{
+    transform: scale(1.1);
+}
+
+.searash-section{
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    width: fit-content;
+    height: 3rem;
+}
+
+.searash-section input{
+    width: 45vw;
     border-radius: 0.5rem;
     cursor: pointer;
     padding: 0 1vw ;
-    border: none;
-    height: 2rem;
-    font-size: var(--text-fs);
+    border: 0.1rem solid var(--gray-color);
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.3rem;
     font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.searash-section input::placeholder{
+    color: var(--white-color);
 }
 
 .searash-section .searsh-icon{
     color: var(--gray-color);
+    position: absolute;
+    font-size: 2vw;
+    right: 1rem;
+    top: 0.7rem;
 }
 
 .searash-section input:focus,
 .searash-section input:hover{
-    border: none;
+    border: 0.1rem solid transparent;
     outline: none;
+    background: var(--white-color);
 }
 
-.searash-section .searsh-icon{
-    position: absolute;
-    font-size: 2vw;
-}
-
-.notification{
-    display: flex;
-    gap: 2vw;
-}
-
-.notification .notification-icon{
-    color: var(--secondry-color);
-    cursor: pointer;
-    font-size: 1.8vw;
-    transition: all 0.5s ease;
-}
-
-.notification .notification-icon::after{
-    content: "5";
-    height: 1vw;
-    width: 1vw;
-    background-color: red;
-    position: absolute;
-}
-
-.notification .notification-icon:hover{
-    color: red;
+.searash-section input:focus::placeholder,
+.searash-section input:hover::placeholder{
+    color: var(--gray-color);
 }
 
 
 /*#endregion */
+
 
 /*#endregion */
 
