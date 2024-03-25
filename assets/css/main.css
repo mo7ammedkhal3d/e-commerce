@@ -4,6 +4,7 @@
     --primary-color:#114232;
     --secondry-color:#FFF;
     --hover-color:#FCDC2A;
+    --bg-color: linear-gradient(to right, #283c86, #45a247);
     --head-color:#344955;
     --text-color:#313131;
     --white-color:#FFF;
@@ -43,7 +44,7 @@ nav{
     display: flex;
     align-items: center;
     padding: 0 2.5rem;
-    background-color: var(--primary-color);
+    background: var(--bg-color)
 }
 
 .logo img{
@@ -53,6 +54,9 @@ nav{
 
 .navigation-links{
     margin-right: auto;
+    height: 9.5rem;
+    display: flex;
+    align-items: end;
 }
 
 .navigation-links ul{
@@ -73,6 +77,13 @@ nav{
 .navigation-links li:hover{
     color: var(--primary-color);
     background-color: var(--hover-color);
+}
+
+.left-navigation{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 .user-space{
@@ -136,6 +147,12 @@ nav{
 .user-notification .messages-icon:hover,
 .cart .cart-icon:hover{
     transform: scale(1.1);
+}
+
+.cart{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
 }
 
 /*#endregion */
@@ -221,4 +238,12 @@ nav{
 /*#endregion */
 
 /*#region Footer */
+
+footer{
+    height: 30rem;
+    background: var(--bg-color);
+}
+
+
+
 /*#endregion */

@@ -28,7 +28,7 @@
                     <li>Views</li>
                 </ul>
             </div>
-            <div>
+            <div class="left-navigation">
                 <div class="user-space">
                     <div class="user-notification">
                         <div class="user-notification">
@@ -48,18 +48,23 @@
         </nav>
         <div class="hero">
             <img src="./assets/img/hero-img.jpg" alt="Loading">
+            <div class="searash-section">
+                <input type="text" placeholder="Enter keyword to searsh ... ">
+                <i class="fa-solid fa-magnifying-glass searsh-icon"></i>
+            </div>
         </div>
-        <div class="searash-section">
-            <input type="text" placeholder="Enter keyword to searsh ... ">
-            <i class="fa-solid fa-magnifying-glass searsh-icon"></i>
-        </div>
+
     </header>
     <main>
 
     </main>
     <footer>
         <div class="footer-content">
-            <div class="footer-logo"></div>
+            <div class="footer-logo">
+            <a href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
             <div class="linkes"></div>
             <div class="contact-us"></div>
         </div>
