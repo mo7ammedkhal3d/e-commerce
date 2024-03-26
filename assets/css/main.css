@@ -10,6 +10,7 @@
     --white-color:#FFF;
     --gray-color:#7e7e7e;
     --noification-color:#FF004D;
+    --disable-text-color:#F8F6E3;
     --head-fs:1.5vw;
     --text-fs:0.9vw;
 }
@@ -164,7 +165,7 @@ nav{
 }
 
 .hero img{
-    height: 35rem;
+    height: 40vw;
     width: 100%;
 }
 
@@ -234,7 +235,7 @@ main{
 }
 
 .about-us hr{
-    margin: 2rem 0;
+    margin: 2rem 0 2.5rem 0;
 }
 
 .about-us .content{
@@ -244,7 +245,7 @@ main{
 .about-us h1{
     text-align: center;
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 4vw;
     margin: 5rem 0;
 }
 
@@ -254,13 +255,14 @@ main{
 }
 
 .description p{
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     margin: 0;
+    text-align: justify;
 }
 
 .description img{
-    height: 30rem;
-    width: 45rem;
+    height: 25vw;
+    width: 33vw;
     border-radius: 1rem;
 }
 
@@ -283,23 +285,29 @@ main{
 /*#region Footer */
 
 footer{
-    height: 30rem;
+    height: fit-content;
     background: var(--bg-color);
+}
+
+.footer-logo{
+    padding: 2rem;
+}
+
+.footer-logo img{
+    height: 20vw;
+    width: 20vw;
 }
 
 .footer-content{
     display: flex;
     gap: 2rem;
-}
-
-.logo img{
-    height: 10rem1;
-    width: 10rem;
+    flex-wrap: wrap;
 }
 
 .footer-content .linkes{
     display: flex;
-    gap: 2rem;
+    gap: 10rem;
+    flex-wrap: wrap;
     color: var(--white-color);
     padding: 1.5rem;
 }
@@ -307,10 +315,77 @@ footer{
 .footer-content ul{
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-.footer-content ul il{
+.footer-content ul li{
     margin: 1rem 0;
+    text-align: center;
     cursor: pointer;
+    margin: 1rem 0;
+    color: var(--disable-text-color);
+    transition: transform 0.5s ease;
 }
+
+.footer-content ul li:hover{
+    transform: scale(1.1);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.contact-us{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us hr{
+    width: 65%;
+}
+
+.contact-us h1{
+    color: var(--white-color);
+    text-align: center;
+}
+
+.contact-us form{
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.contact-us input,
+.contact-us textarea{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--gray-color);
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+    display: block;
+    margin: 2.5rem 0;
+    color: var(--white-color);
+}
+
+.contact-us input:hover,
+.contact-us input:focus,
+.contact-us textarea:hover,
+.contact-us textarea:focus{
+    outline: none;
+    border: 0.1rem solid var(--white-color);
+}
+
+.contact-us button{
+    padding: 0.5rem 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /*#endregion */
