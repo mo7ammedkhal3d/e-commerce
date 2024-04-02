@@ -1,3 +1,4 @@
+
 /*#region Variable */
 
 :root{
@@ -16,6 +17,16 @@
 }
 
 /*#endregion */
+
+/*#region Resat */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*#endregion  */
 
 /*#region Glopal */
 
@@ -169,8 +180,6 @@ nav{
     width: 100%;
 }
 
-
-
 .searash-section{
     position: absolute;
     top: 31%;
@@ -287,6 +296,28 @@ main{
 footer{
     height: fit-content;
     background: var(--bg-color);
+    padding: 2rem;
+}
+
+.footer-content{
+    display: flex;
+    gap: 23rem;
+    flex-wrap: wrap;
+}
+
+.barnd-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    gap: 2rem;
+}
+
+.barnd-section .description{
+    color: var(--white-color);
+    font-size: 0.9vw;
+    font-family: cursive;
+    padding: 2rem;
 }
 
 .footer-logo{
@@ -298,18 +329,27 @@ footer{
     width: 20vw;
 }
 
-.footer-content{
+.social-mediea ul{
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-mediea ul li a img{
+    height: 2vw ;
+    width: 2vw;
 }
 
 .footer-content .linkes{
     display: flex;
     gap: 10rem;
+    justify-content: center;
     flex-wrap: wrap;
     color: var(--white-color);
-    padding: 1.5rem;
+    padding: 8vw;
 }
 
 .footer-content ul{
@@ -325,6 +365,7 @@ footer{
     margin: 1rem 0;
     color: var(--disable-text-color);
     transition: transform 0.5s ease;
+    font-size: 1.2vw;
 }
 
 .footer-content ul li:hover{
@@ -340,8 +381,11 @@ footer{
     align-items: center;
 }
 
+
+
 .contact-us hr{
     width: 65%;
+    margin: 4rem 0;
 }
 
 .contact-us h1{
@@ -380,12 +424,19 @@ footer{
 .contact-us button{
     padding: 0.5rem 2.5rem;
     color: var(--primary-color);
-    background-color: var(--hover-color);
+    background-color: #c9b230;
     border-radius: 0.5rem;
     border: none;
+    width: 17vw;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3vw;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.contact-us button:hover{
+    background-color: #f9da27;
 }
 
 /*#endregion */
